@@ -1,0 +1,3 @@
+/home/mihai145/Uni/an1-sem2/lfa/LFA/build/CMakeFiles/rebuild_cache.dir
+/home/mihai145/Uni/an1-sem2/lfa/LFA/build/CMakeFiles/edit_cache.dir
+/home/mihai145/Uni/an1-sem2/lfa/LFA/build/CMakeFiles/tema_lab_2.dir

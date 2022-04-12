@@ -1,0 +1,93 @@
+Alfabetul automatului are 2 litere: b a 
+Automatul are 3 stari: q2 q1 q0 
+(q2, b) -> q1
+(q2, b) -> q2
+(q1, b) -> q1
+(q1, a) -> q2
+(q1, a) -> q1
+(q0, b) -> q1
+(q2, a) -> q2
+(q0, a) -> q0
+Starea initiala: q0
+Automatul are 1 stari finale: q2 
+
+Alfabetul automatului are 2 litere: b a 
+Automatul are 3 stari: {q1,q2,} {q1,} {q0,} 
+({q1,q2,}, a) -> {q1,q2,}
+({q1,q2,}, b) -> {q1,q2,}
+({q1,}, a) -> {q1,q2,}
+({q1,}, b) -> {q1,}
+({q0,}, a) -> {q0,}
+({q0,}, b) -> {q1,}
+Starea initiala: {q0,}
+Automatul are 1 stari finale: {q1,q2,} 
+
+Automatul NFA nu accepta cuvantul a
+Automatul DFA echivalent nu accepta cuvantul a
+==========
+Automatul NFA accepta cuvantul aba
+Automatul DFA echivalent accepta cuvantul aba
+==========
+Automatul NFA accepta cuvantul abaaabb
+Automatul DFA echivalent accepta cuvantul abaaabb
+==========
+Automatul NFA nu accepta cuvantul bb
+Automatul DFA echivalent nu accepta cuvantul bb
+==========
+Automatul NFA accepta cuvantul bba
+Automatul DFA echivalent accepta cuvantul bba
+==========
+Automatul NFA nu accepta cuvantul aab
+Automatul DFA echivalent nu accepta cuvantul aab
+==========
+
+
+
+Alfabetul automatului are 2 litere: 1 0 
+Automatul are 6 stari: f e c b d a 
+(e, 0) -> e
+(d, 1) -> f
+(c, 0) -> e
+(c, 1) -> f
+(d, 0) -> e
+(f, 0) -> f
+(b, 1) -> d
+(e, 1) -> f
+(a, 1) -> c
+(b, 0) -> a
+(f, 1) -> f
+(a, 0) -> b
+Starea initiala: a
+Automatul are 3 stari finale: e d c 
+
+
+Alfabetul automatului are 2 litere: 1 0 
+Automatul are 3 stari: {d,c,e,} {b,a,} {f,} 
+({f,}, 1) -> {f,}
+({b,a,}, 0) -> {b,a,}
+({f,}, 0) -> {f,}
+({b,a,}, 1) -> {d,c,e,}
+({d,c,e,}, 0) -> {d,c,e,}
+({d,c,e,}, 1) -> {f,}
+Starea initiala: {b,a,}
+Automatul are 1 stari finale: {d,c,e,} 
+
+
+Automatul DFA accepta cuvantul 010
+Automatul DFA minimizat accepta cuvantul 010
+==========
+Automatul DFA nu accepta cuvantul 0
+Automatul DFA minimizat nu accepta cuvantul 0
+==========
+Automatul DFA accepta cuvantul 1
+Automatul DFA minimizat accepta cuvantul 1
+==========
+Automatul DFA nu accepta cuvantul 001110010
+Automatul DFA minimizat nu accepta cuvantul 001110010
+==========
+Automatul DFA nu accepta cuvantul 0110
+Automatul DFA minimizat nu accepta cuvantul 0110
+==========
+Automatul DFA accepta cuvantul 100
+Automatul DFA minimizat accepta cuvantul 100
+==========

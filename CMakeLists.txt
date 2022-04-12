@@ -1,6 +1,9 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.14)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(tema_lab_2)
 
-set(CMAKE_CXX_STANDARD 17)
+file(GLOB_RECURSE SRC_FILES src/*.cpp)
+add_executable(tema_lab_2 ${SRC_FILES} main.cpp)
 
-add_executable(tema_lab_2 main.cpp State.cpp State.h Base_Automaton.cpp Base_Automaton.h Automaton.cpp Automaton.h Partition.cpp Partition.h)
+target_include_directories(tema_lab_2 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

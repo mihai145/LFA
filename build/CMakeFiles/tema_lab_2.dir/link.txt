@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/tema_lab_2.dir/src/Automaton.cpp.o CMakeFiles/tema_lab_2.dir/src/Base_Automaton.cpp.o CMakeFiles/tema_lab_2.dir/src/Partition.cpp.o CMakeFiles/tema_lab_2.dir/src/State.cpp.o CMakeFiles/tema_lab_2.dir/main.cpp.o  -o tema_lab_2 
